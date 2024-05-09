@@ -1,0 +1,11 @@
+version: "3.8"
+
+services: 
+  frontend:
+    container_name: ecommerce-ui
+    build: ./frontend
+    restart: always
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 3000:3000
