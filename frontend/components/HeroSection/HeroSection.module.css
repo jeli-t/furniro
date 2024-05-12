@@ -3,7 +3,6 @@
     background-image: url('./background-image.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     height: calc(100vh - 100px);
     margin-top: 100px;
