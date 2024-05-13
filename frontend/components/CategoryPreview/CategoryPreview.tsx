@@ -16,24 +16,30 @@ export function CategoryPreview() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
                 <div className={classes.categories}>
-                    <div className={classes.category_card}>
-                        <Image src={dining} className={classes.category_image} alt="Dining" title='Dining' />
-                        <h3 className={classes.category_title}>
-                            Dining
-                        </h3>
-                    </div>
-                    <div className={classes.category_card}>
-                        <Image src={living} className={classes.category_image} alt="Living" title='Living' />
-                        <h3 className={classes.category_title}>
-                            Living
-                        </h3>
-                    </div>
-                    <div className={classes.category_card}>
-                        <Image src={bedroom} className={classes.category_image} alt="Bedroom" title='Bedroom' />
-                        <h3 className={classes.category_title}>
-                            Bedroom
-                        </h3>
-                    </div>
+                    <a href="#">
+                        <div className={classes.category_card}>
+                            <Image src={dining} className={classes.category_image} alt="Dining" title='Dining' />
+                            <h3 className={classes.category_title}>
+                                Dining
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className={classes.category_card}>
+                            <Image src={living} className={classes.category_image} alt="Living" title='Living' />
+                            <h3 className={classes.category_title}>
+                                Living
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div className={classes.category_card}>
+                            <Image src={bedroom} className={classes.category_image} alt="Bedroom" title='Bedroom' />
+                            <h3 className={classes.category_title}>
+                                Bedroom
+                            </h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
