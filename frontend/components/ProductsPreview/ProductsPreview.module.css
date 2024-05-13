@@ -32,54 +32,6 @@
     margin-bottom: 20px;
 }
 
-.product_card {
-    background-color: #F4F5F7;
-    display: flex;
-    flex-direction: column;
-}
-
-.card_content {
-    display: flex;
-    flex-direction: column;
-    padding: 18px;
-    gap: 10px;
-}
-
-.product_title {
-    font-weight: 600;
-    font-size: 24;
-    line-height: 120%;
-    color: #3a3a3a;
-}
-
-.product_description {
-    font-weight: 200;
-    font-size: 16;
-    line-height: 150%;
-    color: #898989;
-}
-
-.product_prices {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.current_price {
-    font-weight: 600;
-    font-size: 20;
-    line-height: 150%;
-    color: #3a3a3a;
-}
-
-.old_price {
-    font-weight: 200;
-    font-size: 16;
-    line-height: 150%;
-    color: #b0b0b0;
-    text-decoration: line-through;
-}
-
 .button {
     margin-top: 30px;
     background-color: #FFFFFF;
