@@ -21,7 +21,7 @@ export function ProductsPreview() {
                 <div className={classes.grid}>
                     <ProductCard link="#" image={syltherine} title='Syltherine' description='Stylish cafe chair' current_price='Rp 2.500.000' old_price='Rp 3.500.000' />
                     <ProductCard link="#" image={leviosa} title='Leviosa' description='Stylish cafe chair' current_price='Rp 2.500.000' old_price=''/>
-                    <ProductCard link="#" image={lolito} title='Leviosa' description='Luxury big sofa' current_price='Rp 7.000.000' old_price='Rp 14.000.000'/>
+                    <ProductCard link="#" image={lolito} title='Lolito' description='Luxury big sofa' current_price='Rp 7.000.000' old_price='Rp 14.000.000'/>
                     <ProductCard link="#" image={respira} title='Respira' description='Outdoor bar table and stool' current_price='Rp 500.000' old_price=''/>
                 </div>
                 <div className={classes.grid}>
@@ -30,9 +30,11 @@ export function ProductsPreview() {
                     <ProductCard link="#" image={pingky} title='Pingky' description='Cute bed set' current_price='Rp 7.000.000' old_price='Rp 14.000.000'/>
                     <ProductCard link="#" image={potty} title='Potty' description='Minimalist flower pot' current_price='Rp 500.000' old_price=''/>
                 </div>
-                <div className={classes.button}>
-                    Show More
-                </div>
+                <a href="">
+                    <div className={classes.button}>
+                        Show More
+                    </div>
+                </a>
             </div>
         </div>
     )
