@@ -9,9 +9,10 @@ interface ProductCardProps {
     description: string;
     current_price: string;
     old_price: string;
+    badge: string;
 }
 
-export function ProductCard({link, image, title, description, current_price, old_price}: ProductCardProps) {
+export function ProductCard({link, image, title, description, current_price, old_price, badge}: ProductCardProps) {
     return (
         <a href={link}>
             <div className={classes.product_card}>
@@ -32,6 +33,11 @@ export function ProductCard({link, image, title, description, current_price, old
                         </span>
                     </div>
                 </div>
+                {badge !== '' && (
+                    <div className={classes.badge} style={{background: badge === "New" ? '#2EC1AC' : '#E97171'}}>
+                        {badge}
+                    </div>
+                )}
             </div>
         </a>
     )
