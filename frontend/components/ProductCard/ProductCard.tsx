@@ -1,5 +1,8 @@
 import classes from './ProductCard.module.css';
 import Image, { StaticImageData } from 'next/image';
+import { IconShare } from '@tabler/icons-react';
+import { IconArrowsRightLeft } from '@tabler/icons-react';
+import { IconHeart } from '@tabler/icons-react';
 
 
 interface ProductCardProps {
@@ -38,6 +41,25 @@ export function ProductCard({link, image, title, description, current_price, old
                         {badge}
                     </div>
                 )}
+                <div className={classes.overlay}>
+                    <div className={classes.button}>
+                        Add to cart
+                    </div>
+                    <div className={classes.links}>
+                        <a href="#" className={classes.link}>
+                            <IconShare stroke={2} size={18} fill='white'/>
+                            Share
+                        </a>
+                        <a href="#" className={classes.link}>
+                            <IconArrowsRightLeft stroke={3} size={18} />
+                            Compare
+                        </a>
+                        <a href="#" className={classes.link}>
+                            <IconHeart stroke={3} size={18} />
+                            Like
+                        </a>
+                    </div>
+                </div>
             </div>
         </a>
     )
