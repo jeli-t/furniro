@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-;}
+}
 
 .wrapper {
     height: fit-content;
@@ -16,7 +16,7 @@
 
 .title {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 0;
 }
 

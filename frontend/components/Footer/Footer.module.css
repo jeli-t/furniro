@@ -24,7 +24,7 @@
 }
 
 .title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 24px;
     margin-bottom: 50px;
 }
@@ -91,7 +91,7 @@
     border: 0px;
     border-bottom: 1px solid #000000;
     font-size: 14px;
-    font-weight: 400px;
+    font-weight: 400;
     cursor: pointer;
     transition: color 0.3s ease;
 }
