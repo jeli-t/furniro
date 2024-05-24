@@ -15,8 +15,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .content {
@@ -25,6 +25,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    min-width: 450px;
 }
 
 .title {
@@ -59,4 +60,127 @@
 
 .button:hover {
     background-color: #8f6f26;
+}
+
+.slider_wrapper {
+    height: 582px;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 1200px;
+    height: 582px;
+}
+
+.current {
+    position: relative;
+}
+
+.current_image {
+    height: 1582;
+    width: auto;
+}
+
+.slide_banner {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.banner_content {
+    background-color: rgba(255, 255, 255, 0.72);
+    display: flex;
+    flex-direction: column;
+    padding: 32px 32px;
+}
+
+.slide_title {
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #3a3a3a;
+}
+
+.link {
+    width: 48px;
+    height: 48px;
+    background-color: #B88E2F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.link:hover {
+    background-color: #8f6f26;
+}
+
+.queue {
+    position: relative;
+    width:0%;
+}
+
+.second_image {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    width: 372px;
+    height: 486px;
+}
+
+.third_image {
+    position: absolute;
+    top: 0px;
+    left: 442px;
+    width: 372px;
+    height: 486px;
+}
+
+.queue_image {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    position: absolute;
+    left: 400px;
+    top: 250px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B88E2F;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.arrow:hover {
+    background-color: #e5e5e5;
+}
+
+.dots {
+    position: absolute;
+    top: 530px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    background-color: #d8d8d8;
 }
