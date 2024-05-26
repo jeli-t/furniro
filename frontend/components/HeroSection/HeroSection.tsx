@@ -1,4 +1,5 @@
 import classes from './HeroSection.module.css';
+import Link from 'next/link';
 
 
 export function HeroSection() {
@@ -14,11 +15,11 @@ export function HeroSection() {
                 <p className={classes.description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br /> Ut elit tellus, luctus nec ullamcorper mattis.
                 </p>
-                <a href="#">
+                <Link href="/new-arrival">
                     <div className={classes.button}>
                         BUY NOW
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     )

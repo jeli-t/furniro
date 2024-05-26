@@ -6,20 +6,23 @@ import { IconUserExclamation } from '@tabler/icons-react';
 import { IconSearch } from '@tabler/icons-react';
 import { IconHeart } from '@tabler/icons-react';
 import { IconShoppingCart } from '@tabler/icons-react';
+import Link from 'next/link';
 
 
 export function HeaderMenu() {
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>
-                <Image src={logo} alt="Furniro" title='Furniro' loading='eager' />
-            </div>
+            <Link href="/">
+                <div className={classes.logo}>
+                    <Image src={logo} alt="Furniro" title='Furniro' loading='eager' />
+                </div>
+            </Link>
             <nav className={classes.nav}>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/shop">Shop</Link></li>
+                    <li><Link href="/about">About</Link></li>
+                    <li><Link href="/contact">Contact</Link></li>
                 </ul>
             </nav>
             <div className={classes.icons}>

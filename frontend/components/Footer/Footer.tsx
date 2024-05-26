@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Footer.module.css';
+import Link from 'next/link';
 
 
 export function Footer() {
@@ -20,10 +21,10 @@ export function Footer() {
                     </h4>
                     <nav className={classes.nav}>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><Link href="/">Home</Link></li>
+                            <li><Link href="/shop">Shop</Link></li>
+                            <li><Link href="/about">About</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -33,9 +34,9 @@ export function Footer() {
                     </h4>
                     <nav className={classes.nav}>
                         <ul>
-                            <li><a href="#">Payment Options</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Privacy Policies</a></li>
+                            <li><Link href="/payments">Payment Options</Link></li>
+                            <li><Link href="/returns">Returns</Link></li>
+                            <li><Link href="/privacy-policy">Privacy Policies</Link></li>
                         </ul>
                     </nav>
                 </div>

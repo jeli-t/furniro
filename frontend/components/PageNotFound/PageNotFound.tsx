@@ -1,4 +1,5 @@
 import classes from './PageNotFound.module.css';
+import Link from 'next/link';
 
 
 export function PageNotFound() {
@@ -11,11 +12,11 @@ export function PageNotFound() {
                 <p className={classes.description}>
                     This website is only part of my portfolio. <br /> To contact me visit my main website.
                 </p>
-                <a href="https://jeli.pl">
+                <Link href="https://jeli.pl">
                     <div className={classes.button}>
                         www.jeli.pl
                     </div>
-                </a>
+                </Link>
             </div>
         </div>
     )

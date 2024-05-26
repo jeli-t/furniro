@@ -1,5 +1,6 @@
 import classes from './Inspirations.module.css';
 import { Slider } from './slider/Slider';
+import Link from 'next/link';
 
 
 export function Inspirations() {
@@ -13,11 +14,11 @@ export function Inspirations() {
                     <p className={classes.description}>
                         Our designer already made a lot of beautiful <br /> prototipe of rooms that inspire you
                     </p>
-                    <a href="#">
+                    <Link href="/inspirations">
                         <div className={classes.button}>
                             Explore More
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className={classes.slider_wrapper}>
                     <Slider />
