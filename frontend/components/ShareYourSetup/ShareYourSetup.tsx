@@ -13,7 +13,7 @@ export function ShareYourSetup() {
                 <h3 className={classes.title}>
                     #FuniroFurniture
                 </h3>
-                <Image src={share} className={classes.image} alt="" />
+                <Image src={share} className={classes.image} alt="#FuniroFurniture" title="#FuniroFurniture" />
             </div>
         </div>
     )
