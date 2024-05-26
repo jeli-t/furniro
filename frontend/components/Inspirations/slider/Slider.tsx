@@ -6,7 +6,7 @@ import img2 from './img2.png';
 import img3 from './img3.png';
 import { IconArrowRight } from '@tabler/icons-react';
 import { IconChevronRight } from '@tabler/icons-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 export function Slider() {
@@ -19,41 +19,51 @@ export function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [secondIndex, setSecondIndex] = useState(1);
     const [thirdIndex, setThirdIndex] = useState(2);
+    const [showOverlay, setShowOverlay] = useState(false);
 
     const goToNext = () => {
-        if (currentIndex == 0) {
-            setCurrentIndex(1);
-            setSecondIndex(2);
-            setThirdIndex(0);
-        } else if (currentIndex == 1) {
-            setCurrentIndex(2);
-            setSecondIndex(0);
-            setThirdIndex(1);
-        } else if (currentIndex == 2) {
-            setCurrentIndex(0);
-            setSecondIndex(1);
-            setThirdIndex(2);
-        }
+        setShowOverlay(true);
+        setTimeout(() => {
+            if (currentIndex == 0) {
+                setCurrentIndex(1);
+                setSecondIndex(2);
+                setThirdIndex(0);
+            } else if (currentIndex == 1) {
+                setCurrentIndex(2);
+                setSecondIndex(0);
+                setThirdIndex(1);
+            } else if (currentIndex == 2) {
+                setCurrentIndex(0);
+                setSecondIndex(1);
+                setThirdIndex(2);
+            }
+            setShowOverlay(false);
+        }, 400);
     };
 
     const goToSlide = (slideIndex:any) => {
-        setCurrentIndex(slideIndex);
-        if (slideIndex == 0) {
-            setSecondIndex(1);
-            setThirdIndex(2);
-        } else if (slideIndex == 1) {
-            setSecondIndex(2);
-            setThirdIndex(0);
-        } else if (slideIndex == 2) {
-            setSecondIndex(0);
-            setThirdIndex(1);
-        }
+        setShowOverlay(true);
+        setTimeout(() => {
+            setCurrentIndex(slideIndex);
+            if (slideIndex == 0) {
+                setSecondIndex(1);
+                setThirdIndex(2);
+            } else if (slideIndex == 1) {
+                setSecondIndex(2);
+                setThirdIndex(0);
+            } else if (slideIndex == 2) {
+                setSecondIndex(0);
+                setThirdIndex(1);
+            }
+            setShowOverlay(false);
+        }, 400);
     };
 
     return (
         <div className={classes.slider}>
             <div className={classes.current}>
                 <Image src={slides[currentIndex].img} className={classes.current_image} alt={""} title={""} />
+                <div className={classes.overlay} style={{ opacity: showOverlay ? 1 : 0 }} />
                 <div className={classes.slide_banner}>
                     <div className={classes.banner_content}>
                         <p className={classes.description}>
@@ -71,9 +81,11 @@ export function Slider() {
             <div className={classes.queue}>
                 <div className={classes.second_image}>
                     <Image src={slides[secondIndex].img} className={classes.queue_image} alt={""} title={""} />
+                    <div className={classes.overlay} style={{ opacity: showOverlay ? 1 : 0 }} />
                 </div>
                 <div className={classes.third_image}>
                     <Image src={slides[thirdIndex].img} className={classes.queue_image} alt={""} title={""} />
+                    <div className={classes.overlay} style={{ opacity: showOverlay ? 1 : 0 }} />
                 </div>
                 <div className={classes.dots}>
                     <div className={classes.dot} onClick={() => goToSlide(0)}></div>
