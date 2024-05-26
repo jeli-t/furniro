@@ -118,6 +118,7 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    z-index: 2;
 }
 
 .dot {
@@ -125,4 +126,14 @@
     height: 11px;
     border-radius: 100%;
     background-color: #d8d8d8;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.activeDot {
+    background-color: #B88E2F;
 }

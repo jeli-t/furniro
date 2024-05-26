@@ -87,10 +87,19 @@ export function Slider() {
                     <Image src={slides[thirdIndex].img} className={classes.queue_image} alt={""} title={""} />
                     <div className={classes.overlay} style={{ opacity: showOverlay ? 1 : 0 }} />
                 </div>
-                <div className={classes.dots}>
+                {/* <div className={classes.dots}>
                     <div className={classes.dot} onClick={() => goToSlide(0)}></div>
                     <div className={classes.dot} onClick={() => goToSlide(1)}></div>
                     <div className={classes.dot} onClick={() => goToSlide(2)}></div>
+                </div> */}
+                <div className={classes.dots}>
+                    {slides.map((_, index) => (
+                        <span
+                            key={index}
+                            className={`${classes.dot} ${index === currentIndex ? classes.activeDot : ''}`}
+                            onClick={() => goToSlide(index)}
+                        ></span>
+                    ))}
                 </div>
                 <div className={classes.arrow} onClick={goToNext}>
                     <IconChevronRight stroke={2} size={24} />
