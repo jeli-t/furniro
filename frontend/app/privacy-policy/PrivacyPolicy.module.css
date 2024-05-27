@@ -1,0 +1,16 @@
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 16px;
+}
+
+.h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.p {
+    margin-top: 10px;
+}
