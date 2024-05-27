@@ -42,6 +42,10 @@
     color: #969696;
 }
 
+.responsive_nav {
+    display: none;
+}
+
 .icons ul {
     width: 250px;
     list-style: none;
@@ -59,4 +63,102 @@
 
 .icon:hover {
     color: #969696;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        height: 80px;
+        padding: 10px 50px;
+    }
+
+    .icons ul {
+        width: 200px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .responsive_nav {
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        background-color: white;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .responsive_nav ul {
+        padding: 20px 0px;
+        list-style: none;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .responsive_nav ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+        transition: color 0.2s ease;
+    }
+    
+    .responsive_nav ul li a:hover {
+        color: #969696;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .icon {
+        width: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 60px;
+        width: 100vw;
+        padding: 10px 20px;
+    }
+
+    .responsive_nav {
+        top: 60px;
+    }
+    
+    .responsive_nav ul {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .icons ul {
+        width: 150px;
+    }
+
+    .icon {
+        width: 24px;
+    }
 }
