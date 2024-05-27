@@ -14,14 +14,14 @@
 
 .product_title {
     font-weight: 600;
-    font-size: 24;
+    font-size: 24px;
     line-height: 120%;
     color: #3a3a3a;
 }
 
 .product_description {
     font-weight: 200;
-    font-size: 16;
+    font-size: 16px;
     line-height: 150%;
     color: #898989;
 }
@@ -34,14 +34,14 @@
 
 .current_price {
     font-weight: 600;
-    font-size: 20;
+    font-size: 20px;
     line-height: 150%;
     color: #3a3a3a;
 }
 
 .old_price {
     font-weight: 200;
-    font-size: 16;
+    font-size: 16px;
     line-height: 150%;
     color: #b0b0b0;
     text-decoration: line-through;
@@ -135,4 +135,75 @@
 
 .overlay:hover .link:hover {
     color: #B88E2F;
+}
+
+@media (max-width: 1024px) {
+    .product_card {
+        width: 25vw;
+    }
+
+    .product_image {
+        width: 25vw;
+        height: auto;
+    }
+
+    .product_title {
+        font-size: 20px;
+    }
+
+    .current_price {
+        font-size: 18px;
+    }
+
+    .overlay:hover .button {
+        width: 80%;
+        height: 50px;
+    }
+    
+    .overlay:hover .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product_card {
+        width: 40vw;
+    }
+
+    .product_image {
+        width: 40vw;
+        height: auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .current_price {
+        font-size: 16px;
+    }
+
+    .old_price {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product_card {
+        width: 40vw;
+    }
+
+    .product_image {
+        width: 40vw;
+        height: auto;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .product_prices {
+        flex-direction: column;
+    }
 }
