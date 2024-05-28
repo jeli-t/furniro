@@ -2,18 +2,20 @@
 import classes from './Slider.module.css';
 import Image from 'next/image';
 import img1 from './img1.png';
-import img2 from './img2.png';
-import img3 from './img3.png';
+import img2 from './img2.jpg';
+import img3 from './img3.jpg';
+import img4 from './img4.jpg';
 import { IconArrowRight } from '@tabler/icons-react';
 import { IconChevronRight } from '@tabler/icons-react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 
 export function Slider() {
     const slides = [
         { img: img1, title: "Inner Peace", description: "01 — Bed Room" },
-        { img: img2, title: "Family Space", description: "02 — Dining Room" },
-        { img: img3, title: "Heaven Dream", description: "03 — Bed Room" },
+        { img: img2, title: "Family Space", description: "02 — Living Room" },
+        { img: img3, title: "Big Dinner", description: "03 — Dining Area" },
+        { img: img4, title: "Magic Place", description: "04 — Kitchen" },
       ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -79,31 +81,26 @@ export function Slider() {
                 </div>
             </div>
             <div className={classes.queue}>
-                <div className={classes.second_image}>
+                <div className={classes.queue_element}>
                     <Image src={slides[secondIndex].img} className={classes.queue_image} alt={""} title={""} />
                     <div className={classes.overlay} style={{ opacity: showOverlay ? 1 : 0 }} />
                 </div>
-                <div className={classes.third_image}>
+                <div className={classes.queue_element}>
                     <Image src={slides[thirdIndex].img} className={classes.queue_image} alt={""} title={""} />
                     <div className={classes.overlay} style={{ opacity: showOverlay ? 1 : 0 }} />
                 </div>
-                {/* <div className={classes.dots}>
-                    <div className={classes.dot} onClick={() => goToSlide(0)}></div>
-                    <div className={classes.dot} onClick={() => goToSlide(1)}></div>
-                    <div className={classes.dot} onClick={() => goToSlide(2)}></div>
-                </div> */}
-                <div className={classes.dots}>
-                    {slides.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`${classes.dot} ${index === currentIndex ? classes.activeDot : ''}`}
-                            onClick={() => goToSlide(index)}
-                        ></span>
-                    ))}
-                </div>
-                <div className={classes.arrow} onClick={goToNext}>
-                    <IconChevronRight stroke={2} size={24} />
-                </div>
+            </div>
+            <div className={classes.dots}>
+                {slides.map((_, index) => (
+                    <span
+                        key={index}
+                        className={`${classes.dot} ${index === currentIndex ? classes.activeDot : ''}`}
+                        onClick={() => goToSlide(index)}
+                    ></span>
+                ))}
+            </div>
+            <div className={classes.arrow} onClick={goToNext}>
+                <IconChevronRight stroke={2} size={24} />
             </div>
         </div>
     )
