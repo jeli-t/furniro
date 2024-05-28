@@ -6,10 +6,9 @@
 }
 
 .wrapper {
-    height: 780px;
+    height: fit-content;
     width: 100vw;
     max-width: 1500px;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -31,9 +30,57 @@
 }
 
 .image {
-    position: absolute;
-    left: 0px;
-    top: 30px;
+    margin-top: -30px;
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding-top: 40px;
+    }
+
+    .title {
+        font-size: 42px;
+        line-height: 120%;
+    }
+    
+    .description {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    
+    .description {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .image {
+        width: 110%;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 26px;
+        line-height: 120%;
+    }
+    
+    .description {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    .image {
+        width: 130%;
+        margin-top: -10px;
+    }
 }

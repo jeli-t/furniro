@@ -76,6 +76,7 @@
 @media (max-width: 1024px) {
     .component {
         height: 580px;
+        margin-bottom: 40px;
     }
 
     .title {
@@ -95,6 +96,7 @@
 @media (max-width: 768px) {
     .component {
         height: 540px;
+        margin-bottom: 20px;
     }
 
     .title {
