@@ -1,12 +1,17 @@
-# Ecommerce UI
+# Furniro
 
-### With this project I want to learn how to copy designs from Figma into a real website. No backend, just the frontend UI in Next JS.
+## Ecommerce landing page for furniture shop. No backend, just the frontend UI coded in Next JS.
 
-### Figma design I will use (I'm not the author of the design):
+![Preview](https://github.com/jeli-t/furniro/blob/master/preview.png)
 
-[Interior-Landing-Page-(Community)](https://www.figma.com/file/pDOJUiThxTPB4HYDdqmTnh/eCommerce-Website-%7C-Web-Page-Design-%7C-UI-KIT-%7C-Interior-Landing-Page-(Community)?type=design&node-id=117%3A336&mode=design&t=LOs4Kz614TQsGAIW-1)
+---
+## Figma design I have used (I'm not the author of the design):
 
+[eCommerce Website | Web Page Design | UI KIT | Interior Landing Page](https://www.figma.com/community/file/1252561852327562039/ecommerce-website-web-page-design-ui-kit-interior-landing-page?searchSessionId=lwqbxvvc-onw8b49wbvi)
 
+Licensed under: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
+---
 ## Build and run container:
 ```bash
 docker-compose up -d --build
