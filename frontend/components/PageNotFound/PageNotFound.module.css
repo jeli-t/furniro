@@ -51,3 +51,91 @@
 .button:hover {
     background-color: #8f6f26;
 }
+
+@media (max-width: 1024px) {
+    .content {
+        margin-right: 40px;
+        width: 50%;
+        padding: 25px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 42px;
+        line-height: 120%;
+    }
+    
+    .description {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    .button {
+        margin-top: 20px;
+        padding: 20px 52px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 120%;
+    }
+    
+    .description {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    
+    .button {
+        margin-top: 20px;
+        padding: 16px 42px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        justify-content: flex-start;
+    }
+
+    .content {
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(255, 243, 227, 0.8);
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 26px;
+        line-height: 120%;
+    }
+    
+    .description {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+    
+    .button {
+        margin-top: 10px;
+        padding: 14px 30px;
+        font-size: 16px;
+    }
+}
