@@ -1,4 +1,4 @@
-# Furniro
+# [furniro.jeli.pl](https://furniro.jeli.pl/) :point_left: (live demo)
 
 ## Ecommerce landing page for furniture shop. No backend, just the frontend UI coded in Next JS.
 
