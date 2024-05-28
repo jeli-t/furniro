@@ -76,18 +76,15 @@
 
 .queue_element {
     position: relative;
-    width: 372px;
+    width: auto;
     height: 486px;
-}
-
-.third_image {
-    width: 372px;
-    height: 486px;
+    transition: width 0.5s ease;
 }
 
 .queue_image {
     width: auto;
     height: 100%;
+    transition: width 0.5s ease;
 }
 
 .arrow {
