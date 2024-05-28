@@ -29,12 +29,16 @@ export function Slider() {
             if (currentIndex == 0) {
                 setCurrentIndex(1);
                 setSecondIndex(2);
-                setThirdIndex(0);
+                setThirdIndex(3);
             } else if (currentIndex == 1) {
                 setCurrentIndex(2);
+                setSecondIndex(3);
+                setThirdIndex(0);
+            } else if (currentIndex == 2) {
+                setCurrentIndex(3);
                 setSecondIndex(0);
                 setThirdIndex(1);
-            } else if (currentIndex == 2) {
+            }  else if (currentIndex == 3) {
                 setCurrentIndex(0);
                 setSecondIndex(1);
                 setThirdIndex(2);
@@ -52,8 +56,11 @@ export function Slider() {
                 setThirdIndex(2);
             } else if (slideIndex == 1) {
                 setSecondIndex(2);
-                setThirdIndex(0);
+                setThirdIndex(3);
             } else if (slideIndex == 2) {
+                setSecondIndex(3);
+                setThirdIndex(0);
+            } else if (slideIndex == 3) {
                 setSecondIndex(0);
                 setThirdIndex(1);
             }
