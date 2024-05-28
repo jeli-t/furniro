@@ -20,9 +20,9 @@ export function Inspirations() {
                         </div>
                     </Link>
                 </div>
-                <div className={classes.slider_wrapper}>
-                    <Slider />
-                </div>
+            </div>
+            <div className={classes.slider_wrapper}>
+                <Slider />
             </div>
         </div>
     )

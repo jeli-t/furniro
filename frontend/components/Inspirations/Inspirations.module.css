@@ -1,15 +1,19 @@
 .component {
     width: 100%;
+    height: 670px;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
     background-color: #FCF8F3;
+    position: relative;
 }
 
 .wrapper {
     height: fit-content;
     max-width: 1200px;
+    margin-left: 20px;
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -25,7 +29,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-width: 450px;
+    width: 45%;
 }
 
 .title {
@@ -63,6 +67,79 @@
 }
 
 .slider_wrapper {
+    position: absolute;
     height: 582px;
-    position: relative;
+    width: 55%;
+    right: 0px;
+}
+
+@media (max-width: 1024px) {
+    .component {
+        height: 580px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .slider_wrapper {
+        height: 450px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .component {
+        height: 540px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .slider_wrapper {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .component {
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .wrapper {
+        width: 90%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .slider_wrapper {
+        width: 100%;
+        padding-left: 20px;
+        top: 250px
+    }
 }
